@@ -1,0 +1,491 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap"); */
+/* @import url("https://fonts.cdnfonts.com/css/be-vietnam");
+@import url("https://fonts.cdnfonts.com/css/be-vietnam-pro"); */
+
+@font-face {
+  font-family: Mulish;
+  src: url("assets/fonts/Mulish.ttf") format("opentype");
+}
+@font-face {
+  font-family: BeVietnam;
+  src: url("assets/fonts/BeVietnam.ttf") format("opentype");
+}
+@font-face {
+  font-family: BeVietnamPro;
+  src: url("assets/fonts/BeVietnamPro.ttf") format("opentype");
+}
+
+:root {
+  --primary: #152a46;
+  --secondary: #eff4fa;
+  --white: #ffffff;
+  --offwhite: #fcfcfc;
+  --blue: #2a61a8;
+  --yellow: #ffcd29;
+  --green: #0acf83;
+  --red: #ff6161;
+  --black: #000000;
+  --grey: #a3a3a3;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.navbar-item {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.btn-login {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  width: 148px;
+  height: 48px;
+  border-radius: 50px;
+  background-color: var(--red);
+}
+
+.banner-heading {
+  font-family: "BeVietnamPro";
+  color: var(--white);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.banner-paragraph {
+  font-family: "BeVietnam";
+  color: var(--offwhite);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-info {
+  font-family: "BeVietnam";
+  color: var(--grey);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-title-menu {
+  font-family: "BeVietnam";
+  color: var(--black);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-list-menu {
+  font-family: "BeVietnam";
+  color: var(--grey);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer {
+  font-family: "BeVietnam";
+  color: var(--grey);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23.38px;
+}
+
+.card {
+  font-family: "Mulish";
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #999;
+  background-color: var(--white);
+}
+
+.card-program {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  color: var(--yellow);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.card-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.card-content {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  color: var(--black);
+}
+
+.card-sub-content {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 25px;
+  color: var(--black);
+}
+
+.card-sub-item {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--grey);
+}
+
+.card-item {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  color: var(--green);
+}
+
+.card-price-real {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: line-through;
+  color: var(--grey);
+}
+
+.pagination {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--grey);
+}
+
+.pagination:hover {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  background: #197bff;
+  border-radius: 10px;
+}
+
+.pagination-next {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.pagination-next:hover {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  background: #197bff;
+  border-radius: 10px;
+}
+
+.pagination-aktif {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  background: #197bff;
+  border-radius: 10px;
+}
+
+.joinus-paragraph {
+  font-family: "BeVietnamPro";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 44px;
+  color: var(--white);
+}
+
+.joinus-button {
+  font-family: "BeVietnamPro";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white);
+  background: var(--yellow);
+  border-radius: 50px;
+  height: 53px;
+  width: 262px;
+}
+
+.detail-heading {
+  font-family: "BeVietnamPro";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--white);
+}
+
+.detail-desc-heading {
+  font-family: "BeVietnamPro";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 60px;
+  color: var(--white);
+}
+
+.detail-sub-heading {
+  font-family: "BeVietnam";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.mentor-name {
+  font-family: "BeVietnam";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.mentor-job {
+  font-family: "BeVietnam";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.detail-sub-content {
+  font-family: "BeVietnamPro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.detail-sub-content-active {
+  font-family: "BeVietnamPro";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #197bff;
+}
+
+.btn-cart {
+  font-family: "BeVietnamPro";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--yellow);
+}
+
+.detail-price {
+  font-family: "BeVietnamPro";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--red);
+}
+
+.detail-price-real {
+  font-family: "BeVietnamPro";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  text-decoration: line-through;
+  color: var(--grey);
+}
+
+.detail-materi-heading {
+  font-family: "BeVietnamPro";
+  color: #2b3e58;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.detail-materi-sub-heading {
+  font-family: "BeVietnamPro";
+  color: var(--black);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.detail-materi-desc {
+  font-family: "BeVietnamPro";
+  color: #2b3e58;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.breadcrumb-active {
+  font-family: "Mulish";
+  color: #1097e7;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.breadcrumb {
+  font-family: "Mulish";
+  color: #6d7175;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.checkout-heading {
+  font-family: "Mulish";
+  color: #2b3e58;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.checkout-sub-heading {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.checkout-pay-title {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.checkout-desc {
+  font-family: "Mulish";
+  color: #6d7175;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.checkout-item {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.checkout-title {
+  font-family: "Mulish";
+  color: #000000;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.checkout-sub-title {
+  font-family: "Mulish";
+  color: #000000;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.checkout-item-title {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.checkout-list-item {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.checkout-desc-card {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn-promo-checkout {
+  font-family: "Mulish";
+  color: #ffffff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #2a61a8;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn-bayar {
+  background-color: #2a61a8;
+  height: 48px;
+  width: 200px;
+  border-radius: 50px;
+  font-family: "Mulish";
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
